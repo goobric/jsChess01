@@ -6,5 +6,77 @@ const playerDisplay = document.querySelector('#player');
 const infoDisplay = document.querySelector('#info-display');
 
 const width = 8;
-// pieces
-const startPieces = [];
+// Array of 64 items (64 chess pieces)
+const startPieces = [
+  rook,
+  knight,
+  bishop,
+  queen,
+  king,
+  bishop,
+  knight,
+  rook,
+  pawn,
+  pawn,
+  pawn,
+  pawn,
+  pawn,
+  pawn,
+  pawn,
+  pawn,
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  pawn,
+  pawn,
+  pawn,
+  pawn,
+  pawn,
+  pawn,
+  pawn,
+  pawn,
+  rook,
+  knight,
+  bishop,
+  queen,
+  king,
+  bishop,
+  knight,
+  rook,
+];
+// Create the board array
+function createBoard(){
+  startPieces.forEach((startPiece) => {
+    const square = document.createElement('div');
+    square.classList.add('square');
+  })
+};
