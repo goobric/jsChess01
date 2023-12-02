@@ -4,3 +4,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#gameboard {
+  width: 320px;
+  height: 320px;
+  background-color: #333;
+}
+
+.square {
+  height: 40px;
+  width: 40px;
+}
+
+.beige {
+  background-color: rgb(110, 110, 98);
+}
+.brown {
+  background-color: rgb(139, 69, 19);
+}
