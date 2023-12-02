@@ -16,10 +16,18 @@
   height: 40px;
   width: 40px;
 }
+.square svg {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}
 
 .beige {
   background-color: rgb(110, 110, 98);
 }
 .brown {
   background-color: rgb(139, 69, 19);
+}
+.black {
+  fill: rgb(28, 28, 28);
 }
