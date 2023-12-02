@@ -142,6 +142,9 @@ function dragLeave(e) {
 function dragDrop(e) {
   // console.log(e.target);
   e.stopPropagation();
+  console.log('playerGo', playerGo);
+  console.log('opponentGo', opponentGo);
+  console.log('e.target', e.target);
   const correctGo = draggedElement.firstChild.classList.contains(playerGo);
   const taken = e.target.classList.contains('piece');
   const opponentGo = playerGo === 'white' ? 'black' : 'white';
