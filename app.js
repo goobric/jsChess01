@@ -90,6 +90,9 @@ function createBoard() {
     if (i <= 15) {
       square.firstChild.firstChild.classList.add('black');
     }
+    if (i >= 48) {
+      square.firstChild.firstChild.classList.add('white');
+    }
     gameBoard.append(square);
   });
 }
