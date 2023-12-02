@@ -150,6 +150,20 @@ function dragDrop(e) {
   const opponentGo = playerGo === 'white' ? 'black' : 'white';
   const takenByOpponent = e.target.firstChild.classList.contains(opponentGo);
 
+  if (correctGo) {
+    // must check this first
+    if (takenByOpponent && valid) {
+      e.target.parentNode.append(draggedElement);
+      e.target.remove();
+      changePlayer();
+      return;
+    }
+    // then check this
+    if (taken) {
+      return;
+    }
+  }
+
   e.target.parentNode.append(draggedElement);
   e.target.remove();
 
